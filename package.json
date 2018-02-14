@@ -1,0 +1,16 @@
+{
+  "name": "fortune-postgres-example",
+  "version": "1.0.0",
+  "description": "Example of postgres transaction issue",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Graham Bates",
+  "license": "ISC",
+  "dependencies": {
+    "fortune": "^5.4.1",
+    "fortune-http": "^1.2.8",
+    "fortune-postgres": "^1.6.3"
+  }
+}

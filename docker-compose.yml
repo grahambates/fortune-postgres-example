@@ -1,0 +1,13 @@
+version: "3.1"
+
+services:
+  postgres:
+    image: postgres:9.6.3
+  webserver:
+    image: node:carbon
+    working_dir: /workdir
+    volumes:
+      - .:/workdir
+    ports:
+      - "3000:80"
+    command: sh -c "cd /workdir/; npm install; node index.js"
